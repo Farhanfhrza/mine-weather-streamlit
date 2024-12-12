@@ -4,11 +4,11 @@ import requests
 import streamlit as st
 # import matplotlib.pyplot as plt
 from io import BytesIO
-from matplotlib import font_manager
+# from matplotlib import font_manager
 
 # Menambahkan font custom
 font_path = '/mnt/data/file-ngwyeoEN29l1M3O1QpdxCwkj'
-font_prop = font_manager.FontProperties(fname=font_path)
+# font_prop = font_manager.FontProperties(fname=font_path)
 
 class WeatherConditionMapper:
     def __init__(self):
