@@ -2,7 +2,7 @@
 import pandas as pd
 import requests
 import streamlit as st
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from io import BytesIO
 from matplotlib import font_manager
 
@@ -118,16 +118,16 @@ class MiningWeatherAnalyzer:
 
         return pd.DataFrame(analysis_results)
 
-# Fungsi untuk menampilkan grafik
-def plot_analysis(weather_analysis):
-    plt.figure(figsize=(10, 5))
-    weather_analysis['risk_level'].value_counts().sort_index().plot(kind='bar', fontproperties=font_prop)
-    plt.title('Distribusi Level Risiko', fontproperties=font_prop)
-    plt.xlabel('Level Risiko', fontproperties=font_prop)
-    plt.ylabel('Jumlah Jam', fontproperties=font_prop)
-    plt.xticks(rotation=0, fontproperties=font_prop)
-    plt.tight_layout()
-    return plt
+# # Fungsi untuk menampilkan grafik
+# def plot_analysis(weather_analysis):
+#     plt.figure(figsize=(10, 5))
+#     weather_analysis['risk_level'].value_counts().sort_index().plot(kind='bar', fontproperties=font_prop)
+#     plt.title('Distribusi Level Risiko', fontproperties=font_prop)
+#     plt.xlabel('Level Risiko', fontproperties=font_prop)
+#     plt.ylabel('Jumlah Jam', fontproperties=font_prop)
+#     plt.xticks(rotation=0, fontproperties=font_prop)
+#     plt.tight_layout()
+#     return plt
 
 # Fungsi utama Streamlit
 def main():
